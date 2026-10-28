@@ -1,12 +1,24 @@
-﻿# Task 1 - Java CLI Project
+﻿# Student Register CLI — Task 2
 
-# Student Register CLI
-A menu-driven Java command-line application for managing student records.
+A menu-driven Java command-line application refactored using object-oriented programming principles.
 
 ## Project Details
 - **Track:** Core
-- **Domain:** Student Register
-- **Variant Digit:** Not assigned — instructor confirmed that no pre-made variant table is available.
+- **Domain:** Student Register CLI
+- **Language:** Java 21
+- **Build Tool:** Apache Maven
+
+## Features
+- Add student records
+- List all student records
+- Search for a student by ID
+- Delete a student record
+- Display total records and course-wise counts
+
+## Project Structure
+- `Main.java` — handles the menu and user interaction
+- `Student.java` — represents a student using private fields, getters, setters, and `toString()`
+- `StudentRegisterService.java` — manages student records and application operations
 
 ## Requirements
 - JDK 21
@@ -15,26 +27,20 @@ A menu-driven Java command-line application for managing student records.
 
 ## How to Run
 
-    1. Compile the project:
-        
-        mvn clean compile
+Compile the project:
 
-    2. Run the application:
-
-        java -cp target/classes Main
+    mvn clean compile
 
 
-## Features
-- Add student records
-- List all student records
-- Search for a student by ID
-- Delete a student record
-- Display a summary of registered students by course
+Run the application:
 
-## Screenshots
-- Setup screenshots are available in the `docs/` directory.
+    java -cp target/classes Main
 
-## Project Details
-- Track: Core
-- Domain: Student Register CLI
-- Variant Digit: Not assigned (no variant table provided)
+
+## Documentation
+- `REFACTOR.md` — describes the refactoring decisions, what became easier, and what became harder
+- `docs/class-diagram.png` — class diagram
+- `docs/class-diagram.mmd` — Mermaid source for the class diagram
+
+## Storage
+Student records are stored in memory and are cleared when the application exits.
