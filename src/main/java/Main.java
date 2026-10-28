@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
-    private static final StudentRegisterService service
-            = new StudentRegisterService();
+    private static final StudentRegisterService service = new StudentRegisterService();
 
     public static void main(String[] args) {
         int choice;
@@ -90,8 +89,7 @@ public class Main {
         if (service.addStudent(student)) {
             System.out.println("Record added successfully!");
         } else {
-            System.out.println(
-                    "Could not add record. Check the details and ensure the ID is unique.");
+            System.out.println("Could not add record. Check the details and ensure the ID is unique.");
         }
     }
 
